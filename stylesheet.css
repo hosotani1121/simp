@@ -1,0 +1,602 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background: #5ed8fd;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  display: flex;
+  margin-left: 50px;]
+}
+
+.logo h1 {
+  font-family: Times;
+}
+
+.logo p {
+  display: inline;
+  margin-top: 20px;
+  font-family: Times;
+}
+
+.nav {
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: .7s;
+  font-family: Times;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+
+
+
+/* men */
+
+.men-wrapper {
+  background: #5ed8fd;
+  overflow: hidden;
+}
+
+.men-about {
+  margin-top: 250px;
+}
+
+.men-about h1 {
+  font-family: Times;
+  color: #000;
+  font-size: 80px;
+}
+
+.men-about ul {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.men-about ul li {
+  font-family: Times;
+  list-style: circle;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.snss {
+  vertical-align: bottom;
+}
+
+.snss span {
+  display: inline-block;
+}
+
+.snss span i {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.snss span i:hover {
+  color: #000;
+}
+
+
+/* women */
+
+.women-wrapper {
+  background: #719186;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.women-img {
+  margin-left: -200px;
+}
+
+.women-about {
+  margin-top: 200px;
+}
+
+.women-about h1 {
+  font-family: Times;
+  color: #fff;
+  font-size: 80px;
+}
+
+.women-about ul {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.women-about ul li {
+  font-family: Times;
+  list-style: circle;
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.women-about ul li span i:hover {
+  color: #fff;
+}
+
+/* portfolio wrapper */
+
+.title {
+  padding-top: 100px;
+}
+
+.title h1 {
+  font-family: Times;
+  font-size: 80px;
+}
+
+.portfolio-wrapper {
+  background-color: #a2b2af;
+  height: 100vh;
+  line-height: 55vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #000;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.portfolio-img img:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-illustration {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.portfolio-illustration img {
+  width: 100%;
+}
+
+/* illustration wrapper */
+
+.illustration-wrapper {
+  background-color: #dcd5c5;
+  height: 100vh;
+  line-height: 55vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration-title {
+  padding-top: 100px;
+  text-align: right;
+}
+
+.illustration-title h1 {
+  font-family: Times;
+  font-size: 80px;
+}
+
+.illustration-img {
+  position: absolute;
+  top: 125px;
+  left: -80px;
+}
+
+/* footer wrapper */
+
+.footer {
+  background: #ffe9eb;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.footer-logo h1 {
+  font-size: 200px;
+  font-family: Times;
+  letter-spacing: 5px;
+}
+
+.footer-logo h6 {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 50px;
+  font-family: Times;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.footer-img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+}
+
+.footer-img img {
+  width: 100%;
+}
+
+/* responsive design */
+@media  (max-width: 360px) {
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .men-about h1 {
+    font-size: 70px;
+  }
+
+  .logo {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .men-wrapper {
+    height: 721px;
+    position: relative;
+  }
+
+  .men-about {
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .profile-img {
+    width: 100%;
+    margin-top: -109px;
+  }
+
+  .profile-img img {
+    width: 100%;
+  }
+
+  .women-wrapper {
+    height: 812px;
+    position: relative;
+  }
+
+  .women-about-wrapper {
+    position: absolute !important;
+    top: 30%;
+    left: 10%;
+    z-index: 3;
+  }
+
+  .women-about {
+    margin-top: 0px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 55px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .portfolio-illustration {
+    width: 300px;
+    position: absolute;
+    top: -60px;
+    right: 5%;
+  }
+
+  .portfolio-wrapper {
+    height: 1218px;
+  }
+
+  .portfolio-img {
+    margin-bottom: 30px;
+  }
+
+  .illustration-title {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .illustration-title h1 {
+    position: relative;
+    z-index: 3;
+    font-size: 40px;
+  }
+
+  .illustration-wrapper {
+    height: 1218px;
+  }
+
+  .illustration-img {
+    top: 610px;
+  }
+
+  .footer {
+    height: 284.2px;
+  }
+
+  .footer-logo h1 {
+    font-size: 100px;
+  }
+
+  .footer-logo h6 {
+    font-size: 25px;
+  }
+
+  .footer-img {
+    top: 17%;
+  }
+
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 361px) and (max-width: 576px) {
+
+  .nav {
+    justify-content: center;
+  }
+
+  .logo {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .men-wrapper {
+    height: 800px;
+    position: relative;
+  }
+
+  .men-about {
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .men-about h1 {
+    font-size: 70px;
+  }
+
+  .profile-img {
+    width: 100%;
+    margin-top: -109px;
+  }
+
+  .profile-img img {
+    width: 100%;
+  }
+
+  .women-wrapper {
+    height: 812px;
+    position: relative;
+  }
+
+  .women-about-wrapper {
+    position: absolute !important;
+    top: 30%;
+    left: 18%;
+    z-index: 3;
+  }
+
+  .women-about {
+    margin-top: 0px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 60px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .portfolio-illustration {
+    width: 300px;
+    position: absolute;
+    top: -60px;
+    right: 10%;
+  }
+
+  .portfolio-wrapper {
+    height: 1218px;
+  }
+
+  .portfolio-img {
+    margin-bottom: 30px;
+  }
+
+  .illustration-title {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .illustration-title h1 {
+    position: relative;
+    z-index: 3;
+    font-size: 50px;
+  }
+
+  .illustration-wrapper {
+    height: 1218px;
+  }
+
+  .illustration-img {
+    top: 610px;
+  }
+
+  .footer {
+    height: 284.2px;
+  }
+
+  .footer-logo h1 {
+    font-size: 100px;
+  }
+
+  .footer-logo h6 {
+    font-size: 25px;
+  }
+
+  .footer-img {
+    top: 17%;
+  }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .women-wrapper {
+    height: 80vh;
+  }
+
+  .portfolio-wrapper {
+    height: 80vh;
+    line-height: 40vh;
+  }
+
+  .title h1 {
+    position: relative;
+    z-index: 3;
+  }
+
+  .portfolio-illustration {
+    width: 300px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+
+  .illustration-wrapper {
+    height: 80vh;
+    line-height: 40vh;
+  }
+
+  .illustration-img {
+    position: absolute;
+    top: 180px;
+  }
+
+  .footer {
+    height: 80vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 993px) and (max-width: 1200px) {
+  .women-wrapper {
+    height: 64vh;
+  }
+
+  .portfolio-wrapper {
+    height: 64vh;
+    line-height: 40vh;
+  }
+
+  .title h1 {
+    position: relative;
+    z-index: 3;
+  }
+
+  .portfolio-illustration {
+    width: 300px;
+    position: absolute;
+    top: -72px;
+    right: 0;
+  }
+
+  .illustration-wrapper {
+    height: 64vh;
+    line-height: 40vh;
+  }
+
+  .illustration-img {
+    position: absolute;
+    top: 180px;
+  }
+
+  .footer {
+    height: 64vh;
+  }
+}
+
+
+
+
+/* .women-wrapper {
+  height: 64vh;
+}
+
+.portfolio-wrapper {
+  height: 64vh;
+  line-height: 40vh;
+}
+
+.illustration-wrapper {
+  height: 64vh;
+  line-height: 40vh;
+}
+
+.illustration-img {
+  position: absolute;
+  top: 180px;
+}
+
+.footer {
+  height: 64vh;
+} */
